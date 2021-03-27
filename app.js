@@ -85,7 +85,7 @@ function collectAutoUpgrades() {
 }
 
 function startInterval() {
-    collectionInterval = setInterval(collectAutoUpgrades, 3000);
+    collectionInterval = setInterval(collectAutoUpgrades, 2000);
 }
 
 function mine() {

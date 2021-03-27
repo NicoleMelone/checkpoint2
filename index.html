@@ -20,7 +20,7 @@
     <header class="container-fluid text-center bg-primary">
         <div class="row">
             <div class="col">
-                <h1 class="fun-font">Moon Miner</h1>
+                <h1 class="fun-font"><b>Moon Miner</b></h1>
             </div>
         </div>
     </header>
@@ -28,11 +28,14 @@
         <div class="row bg-secondary">
             <div class="card border-0">
                 <div class="card-body m-2 d-flex justify-content-center flex-wrap">
+                    <h4 class="pb-3 text-primary fun-font">We've discovered the Moon really is made of cheese!</h4>
                     <img class="img-fluid w-50 height: auto" onClick="mine()"
                         src="https://storage.googleapis.com/afs-prod/media/8bd5f8d0f60b40f5bd4f7ec81360a756/2000.jpeg"
                         alt="">
                 </div>
-
+                <div class="text-center">
+                    <h4 class="text-primary fun-font pb-4">How much cheese can you mine?</h4>
+                </div>
             </div>
         </div>
         </div>
@@ -42,51 +45,51 @@
         <div class="row modifier justify-content-center fun-font" id="modifier">
             <div class="col-6 m-2 text-center border border-dark">Total Modifiers: ____</div>
         </div>
-        <div class="row mb-5 upgrades fun-font">
-            <div class="col d-flex flex-wrap justify-content-center">
+        <div class="row mb-5 upgrades d-flex justify-content-center">
+            <div class="col-9 d-flex flex-wrap justify-content-center">
                 <table class="table table-sm table-dark">
                     <tbody>
 
                         <tr>
-                            <th><button class="btn btn-lg btn-outline-primary text-light"
+                            <th><button class="btn btn btn-outline-primary text-light fun-font"
                                     onClick="clickUp('cheeseknife')"><b>Cheeseknife</b></button></th>
-                            <th id="knifecost" scope="col">Cost: 100</th>
-                            <th scope="col">Multiplier: 1</th>
+                            <td class="text-danger" id="knifecost">Cost: 100</td>
+                            <td class="text-warning">Multiplier: 1</td>
                         </tr>
 
                         <tr class="pickaxe">
-                            <th><button class="btn btn-lg btn-outline-primary text-light"
+                            <th><button class="btn btn btn-outline-primary text-light fun-font"
                                     onClick="clickUp('pickaxes')"><b>Pickaxes</b></button></th>
 
-                            <td id="pickcost">Cost: 500</td>
-                            <td>Multiplier: 5</td>
+                            <td class="text-danger" id="pickcost">Cost: 500</td>
+                            <td class="text-warning">Multiplier: 5</td>
                         </tr>
                         <tr>
-                            <th><button class="btn btn-lg btn-outline-primary text-light"
+                            <th><button class="btn btn btn-outline-primary text-light fun-font"
                                     onClick="autoUp('rovers')"><b>Rovers</b></button></th>
 
-                            <td id="rovercost">Cost: 600</td>
-                            <td>Multiplier: 20 every 3 seconds</td>
+                            <td class="text-danger" id="rovercost">Cost: 600</td>
+                            <td class="text-warning">Multiplier: 20 every 2 seconds</td>
                         </tr>
                         <tr>
-                            <th><button class="btn btn-lg btn-outline-primary text-light"
+                            <th><button class="btn btn btn-outline-primary text-light fun-font"
                                     onClick="autoUp('hammerofdawn')"><b>Hammer
                                         of
                                         Dawn</b></button></th>
-                            <td id="hammercost">Cost: 1100</td>
-                            <td>Multiplier: 60 every 3 seconds</td>
+                            <td class="text-danger" id="hammercost">Cost: 1100</td>
+                            <td class="text-warning">Multiplier: 60 every 2 seconds</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <div class="row d-flex justify-content-between">
+                <div class="row">
                     <div>
                         <div class="card" style="width: 13rem;">
                             <img src="https://cdn.shopify.com/s/files/1/0023/5864/0699/products/cheese_knife-001_2048x.jpg?v=1546704175"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Cheeseknife</h5>
-                                <p id="cheeseknife" class="card-text">Quantity:</p>
+                                <h5 class="card-title fun-font">Cheeseknife</h5>
+                                <p id="cheeseknife" class="card-text">Quantity: 0</p>
                             </div>
                         </div>
                     </div>
@@ -94,24 +97,24 @@
                         <img src="https://www.pikpng.com/pngl/m/194-1947652_diamond-pickaxe-png-skyrim-pickaxe-clipart.png"
                             class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Pickaxes</h5>
-                            <p id="pickaxes" class="card-text">Quantity:</p>
+                            <h5 class="card-title fun-font">Pickaxes</h5>
+                            <p id="pickaxes" class="card-text">Quantity: 0</p>
                         </div>
                     </div>
                     <div class="card" style="width: 13rem;">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/NASA_Mars_Rover.jpg"
                             class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Rovers</h5>
-                            <p id="rovers" class="card-text">Quantity:</p>
+                            <h5 class="card-title fun-font">Rovers</h5>
+                            <p id="rovers" class="card-text">Quantity: 0</p>
                         </div>
                     </div>
                     <div class="card" style="width: 13rem;">
                         <img src="https://i.pinimg.com/originals/c5/51/aa/c551aa25e85b2942209b1af6380ab4c2.jpg"
                             class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Hammer of Dawn</h5>
-                            <p id="hammerofdawn" class="card-text">Quantity:</p>
+                            <h5 class="card-title fun-font">Hammer of Dawn</h5>
+                            <p id="hammerofdawn" class="card-text">Quantity: 0</p>
                         </div>
                     </div>
                 </div>
